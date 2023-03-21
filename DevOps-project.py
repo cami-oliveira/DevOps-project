@@ -1,7 +1,7 @@
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++") #Separar
 print("") #pula uma linha na saída  
 print("         Bem-vindo à Loja da Amora!")
-print("Aqui quem fala é a Husky mais famosa da cidade.")
+print("Aqui quem fala é a Husky mais famosa da cidade de Curitiba.")
 print("") #pula uma linha na saída
 print("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++") #Separar
 print("") #pula uma linha na saída
@@ -20,9 +20,9 @@ def obter_limite ():
     print("") #pula uma linha na saída
 
     from datetime import datetime #Biblioteca para hora e data
-    hoje=datetime.now() # Data corrente
-    ano= hoje.strftime("%Y") # Ano corrente
-    idade_cliente= int(ano) - ano_de_nascimento #Lê a idade do usuário
+    hoje = datetime.now() # Data corrente
+    ano = hoje.strftime("%Y") # Ano corrente
+    idade_cliente = int(ano) - ano_de_nascimento #Lê a idade do usuário
     print("Sua idade aproximada é de:" , idade_cliente , "anos") #Imprime a idade do usuário
     limite_de_gasto= float(salario * (idade_cliente/1000) + 100) #Lê o limite de gasto
     print("De acordo com a nossa análise de crédito, você poderá gastar até R$: %.2f" %limite_de_gasto) #Imprime o limite de gasto
@@ -38,7 +38,7 @@ def verificar_produto (limite_de_gasto, idade_cliente):
     preco_produto = float(input("Preço do produto: ")) #Lê o preço do produto
     print("") #pula uma linha na saída
 
-    nome_completo_sistema = "Camilla Cidral da Costa Oliveira" #Lê o nome do vendedor para calcular o desconto, nesse caso, o meu nome completo
+    nome_completo_sistema = "Amora Cidral Moraes" #Lê o nome do vendedor para calcular o desconto
     primeiro_nome = str(nome_completo_sistema.split(" ")[0]) # Busca apenas o primeiro nome
     tamanho_nome_completo_sistema = len(nome_completo_sistema) # Busca o tamanho do nome completo em caracteres
     tamanho_primeiro_nome = len(primeiro_nome) #busca o tamanho do primeiro nome em caracteres
@@ -83,7 +83,7 @@ print("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 print("") #pula uma linha na saída
 qtde_produtos = int(input("Quantos produtos você deseja cadastrar? ")) #Busca a quantidade de produtos que o cliente deseja cadastrar
 print("Você deseja cadastrar: ", qtde_produtos, "produtos") #Imprime a quantidade de produtos 
-n=qtde_produtos
+n = qtde_produtos
 compra_valor_total = 0
 for i in range(n):
     valor = verificar_produto(limite, idade_cliente)
