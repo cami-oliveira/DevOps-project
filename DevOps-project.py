@@ -43,8 +43,8 @@ def verificar_produto (limite_de_gasto, idade_cliente):
     tamanho_nome_completo_sistema = len(nome_completo_sistema) # Busca o tamanho do nome completo em caracteres
     tamanho_primeiro_nome = len(primeiro_nome) #busca o tamanho do primeiro nome em caracteres
     print("O nome da vendedora é:", nome_completo_sistema) # Imprime o nome do vendedor
-    print("O nome tem:", tamanho_nome_completo_sistema, "caracteres") #Imprime o tamanho do nome completo 
-    print("O primeiro nome tem:", tamanho_primeiro_nome,"caracteres") #Imprime o tamanho do primeiro nome
+    # print("O nome tem:", tamanho_nome_completo_sistema, "caracteres") #Imprime o tamanho do nome completo 
+    # print("O primeiro nome tem:", tamanho_primeiro_nome,"caracteres") #Imprime o tamanho do primeiro nome
     print("") #pula uma linha na saida
 
     porcentagem_preco_produto = float((preco_produto*100)/limite_de_gasto) #Calcula a porcentagem do preço do produto
